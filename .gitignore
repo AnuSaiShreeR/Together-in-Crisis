@@ -1,0 +1,27 @@
+@'
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Build output
+dist/
+**/dist/
+build/
+**/build/
+coverage/
+
+# Logs
+*.log
+
+# Editor settings
+.vscode/
+**/.vscode/
+'@ | Set-Content -Encoding utf8 .gitignore
